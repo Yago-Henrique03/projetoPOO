@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> | Message | </title>
+</head>
+<body onload="listarMessages()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="button-createPost">Create Post<i class="ph ph-plus-circle"></i></a></li>
+                <li><a href="#" id="button-likes">Likes<i class="ph ph-thumbs-up"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container-listMessages">
+            <div class="message">
+                <h1 class="title">Esse é o título</h1>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, blanditiis provident odit ipsum ab cumque </p>
+                <div class="control-features">
+                    <div class="control-published">
+                        <p>PUBLISHED</p>
+                        <span id="published-text">YES</span>
+                    </div>
+                    <div class="control-likes">
+                        <div>
+                            <p>LIKES</p>
+                            <i class="ph ph-thumbs-up"></i>
+                        </div>
+                        <div>
+                            <span id="count-likes">10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
