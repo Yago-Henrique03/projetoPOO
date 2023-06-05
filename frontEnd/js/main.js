@@ -1,5 +1,5 @@
 async function listarMessages(){
-    let containerMessages = document.getElementById("container-listMessages");
+    const containerMessages = document.getElementById("container-listMessages");
     containerMessages.innerHTML = "";
 
     const messages = await fetch('http://localhost:3333/messages')

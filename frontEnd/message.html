@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/createPost.css">
     <title> | Message | </title>
 </head>
 <body onload="listarMessages()">
     <header>
         <nav>
             <ul>
-                <li><a href="#" id="button-createPost">Create Post<i class="ph ph-plus-circle"></i></a></li>
+                <li><a href="#" id="btn-createPost">Create Post<i class="ph ph-plus-circle"></i></a></li>
                 <li><a href="#" id="button-likes">Likes<i class="ph ph-thumbs-up"></i></a></li>
             </ul>
         </nav>
@@ -43,7 +44,23 @@
                 </div>
             </div>
         </section>
+        <section id="control-createPost" class="displayOff">
+            <form action="" id="form-createPost">
+                <div>
+                    <label for="title">TÍTULO</label>
+                    <input type="text" placeholder="INSIRA O TÍTULO" id="input-title">
+                </div>
+                <div>
+                    <label for="content">CONTEÚDO</label>
+                    <textarea name="content" id="input-content" cols="30" rows="10" placeholder="INSIRA O TEXTO DESEJADO"></textarea>
+                </div>
+                <dir>
+                    <button type="submit" id="btn-submitPost">CRIAR POST</button>
+                </dir>
+            </form>
+        </section>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/createPost.js"></script>
 </body>
 </html>
