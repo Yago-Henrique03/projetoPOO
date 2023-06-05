@@ -34,4 +34,6 @@ btnSubmitPost.addEventListener('click', async function (ev){
     listarMessages()
     containerMessages.classList.remove("displayOff");
     controlCreatePost.classList.add("displayOff");
+    document.getElementById("input-title").value = ''
+    document.getElementById("input-content").value = '';
 })
