@@ -1,4 +1,6 @@
-
+#control-createPost {
+    margin-top: 20rem;
+}
 #create-post {
     width: 0 auto;
     display: flex;

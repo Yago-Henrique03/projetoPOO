@@ -74,5 +74,23 @@ async function listarMessages(){
     })
 }
 
+document.querySelector("#btn-showPosts").addEventListener("click", function(e) {
+    let containerMessages = document.getElementById("container-listMessages");
+    let controlCreatePost = document.getElementById("control-createPost");
+    containerMessages.classList.remove("displayOff");
+    controlCreatePost.classList.add("displayOff");
+    listarMessages();
+})
+
+const buttonLike = document.querySelector("#btn-likes")
+
+buttonLike.addEventListener("click", () => {
+    let containerMessages = document.getElementById("container-listMessages");
+    let controlCreatePost = document.getElementById("control-createPost");
+    let controlLikes = document.getElementById("control-likes")
+    containerMessages.classList.add("displayOff");
+    controlCreatePost.classList.add("displayOff");
+    controlLikes.classList.remove("displayOff");
+})
 
 
