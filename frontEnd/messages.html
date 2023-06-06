@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/messages.css">
+    <title> | Messages | </title>
+</head>
+<body onload="listarMessages()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="createMessage.html" id="btn-createPost">CREATE POST<i class="ph ph-plus-circle"></i></a></li>
+                <li><a href="editMessages.html">EDIT POST <i class="ph ph-highlighter-circle"></i></a></li>
+                <li><a href="messages.html" id="btn-showPosts">MESSAGES<i class="ph ph-chat-circle"></i></a></li>
+                <li><a href="likes.html" id="btn-likes">LIKES<i class="ph ph-thumbs-up"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container-listMessages">
+        </section>
+        <section id="control-likes" class="displayOff">
+
+        </section>
+    </main>
+    <script src="js/messages.js"></script>
+</body>
+</html>

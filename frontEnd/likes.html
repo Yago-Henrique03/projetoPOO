@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/likes.css">
+    <title>| LIKES | </title>
+</head>
+<body onload="consultaMessages()">
+    <main onload="recuperaLikes()">
+        <form>
+            <h1>LIKES <i class="ph ph-thumbs-up"></i></h1>
+            <div>
+                <select id="idSelecionado" onChange="recuperaLikes()">
+                    <option value="1">Selecione uma opção</option>
+                </select>
+            </div>
+            <div>
+                <label for="addLikes">Quantidade</label>
+                <input type="number" name="addLikes" id="addLikes">
+            </div>
+            <div>
+                <p>LIKES EXISTENTES <span id="likes"></span></p>
+            </div>
+            <button type="button" onclick="adicionarLikes()">ADICIONAR</button>
+            <button type="button" onclick="removerLikes()" id="btn-remove">REMOVER</button>
+        </form>
+        <a href="messages.html">Voltar a messages<i class="ph ph-arrow-u-down-left"></i></a>
+    </main>
+    <script src="js/likes.js"></script>
+</body>
+</html>

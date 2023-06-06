@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    color: rgb(119, 0, 255);
+    margin-bottom: 20px;
+}
+
+#form-createPost {
+    background-color: rgb(31, 31, 31);
+    padding: 25px;
+    border-radius: 4px;
+}
+
+#form-createPost div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+#form-createPost input {
+    height: 35px;
+    width: 350px;
+    padding-left: 10px;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: gray;
+}
+
+#form-createPost input:focus{
+    outline: none;
+    border: 2px solid rgb(119, 0, 255);
+    transition: 0.5s;
+}
+
+#form-createPost textarea {
+    width: 350px;
+    resize: none;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 4px;
+    color: gray;
+}
+
+#form-createPost textarea:focus{
+    outline: none;
+    border: 2px solid rgb(119, 0, 255);
+    transition: 0.5s;
+}
+
+#form-createPost button {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(119, 0, 255);
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#form-createPost button:hover {
+    cursor: pointer;
+}
+
+main a {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(119, 0, 255);
+    text-decoration: none;
+}

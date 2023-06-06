@@ -98,4 +98,20 @@ export async function AppRoutes(server: FastifyInstance){
             return aux;
         }
     })
+
+    server.delete('/message/:id', async (req) => {
+        const idParam = z.object({
+            id: z.string().uuid()
+        })
+
+        const { id } = idParam.parse(req.params);
+
+        const messageRemoved = await prisma.message.delete({
+            where: {
+                id
+            }
+        })
+
+        return messageRemoved
+    })
 }

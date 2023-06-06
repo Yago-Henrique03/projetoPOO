@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/editMessages.css">
+    <title> | EDITAR POST | </title>
+</head>
+<body onload="consultaMessages()">
+    <main>
+        <form>
+            <h1>EDITAR POST <i class="ph ph-highlighter-circle"></i></h1>
+            <div>
+                <select id="idSelecionado">
+                    <option value="1">Selecione uma opção</option>
+                </select>
+            </div>
+            <div>
+                <label for="title">Titulo</label>
+                <input type="text" name="addLikes" id="title">
+            </div>
+            <div>
+                <label for="content">Conteúdo</label>
+                <textarea type="text" placeholder="INSIRA O CONTEÚDO..." id="content"></textarea>
+            </div>
+            <button type="button" onclick="editarMessage()">EDITAR</button>
+        </form>
+        <a href="messages.html">Voltar a messages<i class="ph ph-arrow-u-down-left"></i></a>
+    </main>
+    <script src="js/editMessage.js"></script>
+</body>
+</html>

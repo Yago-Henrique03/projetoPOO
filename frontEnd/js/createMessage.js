@@ -4,16 +4,18 @@ const controlCreatePost = document.getElementById("control-createPost");
 const btnSubmitPost = document.getElementById("btn-submitPost");
 
 
-btnCreatePost.addEventListener('click', function(){
-    containerMessages.classList.add("displayOff");
-    controlCreatePost.classList.remove("displayOff");
-})
-
 btnSubmitPost.addEventListener('click', async function (ev){
     ev.preventDefault();
     const title = document.getElementById("input-title").value;
     const content = document.getElementById("input-content").value;
     let url = `http://localhost:3333/message`;
+
+    if(title === ''){
+        return alert("INSIRA O TÍTULO");
+    }
+    if(content === ''){
+        return alert("INSIRA O CONTEÚDO");
+    }
 
     const message = {title, content};
 
@@ -31,9 +33,6 @@ btnSubmitPost.addEventListener('click', async function (ev){
         alert("Erro durante a criação")
     })
 
-    listarMessages()
-    containerMessages.classList.remove("displayOff");
-    controlCreatePost.classList.add("displayOff");
     document.getElementById("input-title").value = ''
     document.getElementById("input-content").value = '';
 })

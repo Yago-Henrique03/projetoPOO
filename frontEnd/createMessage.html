@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/createMessage.css">
+    <title> | CREATE POST | </title>
+</head>
+<body>
+    <main id="control-createPost" class="displayOff">
+        <h1>CRIAR POST <i class="ph ph-plus-circle"></i></h1>
+        <form action="" id="form-createPost">
+            <div>
+                <label for="title">TÍTULO</label>
+                <input type="text" placeholder="INSIRA O TÍTULO" id="input-title">
+            </div>
+            <div>
+                <label for="content">CONTEÚDO</label>
+                <textarea name="content" id="input-content" cols="30" rows="10" placeholder="INSIRA O TEXTO DESEJADO..."></textarea>
+            </div>
+            <dir>
+                <button type="submit" id="btn-submitPost">CRIAR POST</button>
+            </dir>
+        </form>
+        <a href="messages.html">Voltar a messages<i class="ph ph-arrow-u-down-left"></i></a>
+    </main>
+    <script src="js/createMessage.js"></script>
+</body>
+</html>
