@@ -70,3 +70,4 @@ async function removerLikes(){
     document.getElementById("addLikes").value = '';
     recuperaLikes()
 }
+

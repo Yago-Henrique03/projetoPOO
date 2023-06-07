@@ -17,17 +17,25 @@
         <form>
             <h1>EDITAR POST <i class="ph ph-highlighter-circle"></i></h1>
             <div>
-                <select id="idSelecionado">
+                <select id="idSelecionado" onchange="trazDados()">
                     <option value="1">Selecione uma opção</option>
                 </select>
             </div>
             <div>
-                <label for="title">Titulo</label>
+                <label for="title">TÍTULO</label>
                 <input type="text" name="addLikes" id="title">
             </div>
             <div>
-                <label for="content">Conteúdo</label>
+                <label for="content">CONTEÚDO</label>
                 <textarea type="text" placeholder="INSIRA O CONTEÚDO..." id="content"></textarea>
+            </div>
+            <div>
+                <label for="published">PUBLICADO?</label>
+                <select name="publicado" id="published">
+                    <option value="#">Selecione uma opção</option>
+                    <option value="true">YES</option>
+                    <option value="false">NO</option>
+                </select>
             </div>
             <button type="button" onclick="editarMessage()">EDITAR</button>
         </form>

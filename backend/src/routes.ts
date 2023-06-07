@@ -99,6 +99,35 @@ export async function AppRoutes(server: FastifyInstance){
         }
     })
 
+    server.put('/message/:id', async (req) => {
+        const idParam = z.object({
+            id: z.string().uuid()
+        });
+
+        const putBody = z.object({
+            title: z.string(),
+            content: z.string(),
+            published: z.boolean()
+        });
+
+        const { id } = idParam.parse(req.params)
+
+        const { title, content, published } = putBody.parse(req.body)
+
+        const messageUpdated = await prisma.message.update({
+            where: {
+                id: id
+            },
+            data: {
+                title,
+                content,
+                published
+            }
+        })
+
+        return messageUpdated
+    })
+
     server.delete('/message/:id', async (req) => {
         const idParam = z.object({
             id: z.string().uuid()
